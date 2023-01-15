@@ -1,9 +1,7 @@
 use std::collections::BTreeMap;
-use std::fmt;
-use std::fs;
-use std::str;
-use std::net::IpAddr;
 use std::process::Command;
+use std::net::IpAddr;
+use std::{fmt, fs, str};
 
 use serde::{Deserialize, Serialize};
 
@@ -52,44 +50,8 @@ struct HNAData {
     host_name: String,
 }
 
-//fn read_hna_to_tree(tree: &mut BTreeMap<IpAddr, HNAData>, raw_data: String) {
-//    // split file into lines and skipt the first two lines
-//    let lines = raw_data.lines().skip(2);
-//
-//    for line in lines {
-//        let split: Vec<&str> = line.split_whitespace().collect();
-//
-//        // println!("{:?}", split);
-//
-//        // skip empty lines
-//        if split.len() < 2 {
-//            continue;
-//        }
-//
-//        let hna_raw: Vec<&str> = split[0].split("/").collect();
-//        let hna: IpAddr = hna_raw[0].parse().unwrap();
-//        let netmask: u8 = hna_raw[1].parse().unwrap();
-//        let gw: IpAddr = split[1].parse().unwrap();
-//
-//        // println!("{}, {}, {}", hna, netmask, gw);
-//        tree.insert(
-//            hna,
-//            HNAData {
-//                gateway: gw,
-//                hna: CidrAddr {
-//                    netaddr: hna,
-//                    netmask: netmask,
-//                },
-//                ttl: 0,
-//                host_name: "".to_string(),
-//            },
-//        );
-//    }
-//
-//    ()
-//}
 
-fn read_hna_to_tree_json(tree: &mut BTreeMap<IpAddr, HNAData>, raw_data: &str) {
+fn read_hna_to_tree(tree: &mut BTreeMap<IpAddr, HNAData>, raw_data: &str) {
     let d: OLSRjson = serde_json::from_str(raw_data).unwrap();
 
     for obj in d.hna {
@@ -126,7 +88,6 @@ fn read_hosts_to_tree(tree: &mut BTreeMap<IpAddr, String>, raw_data: String) {
             continue;
         }
 
-        // let err_msg = format!("Iput Value was: {:?}", split);
         let gw_ip: IpAddr = split[0].parse().unwrap();
         let hostname: String = split[1].parse().unwrap();
 
@@ -135,9 +96,7 @@ fn read_hosts_to_tree(tree: &mut BTreeMap<IpAddr, String>, raw_data: String) {
 }
 
 fn main() {
-    // let hna4_raw = fs::read_to_string("raw/hna4_2006.txt").unwrap();
 
-    //let hna4_json = fs::read_to_string("raw/olsr_json.txt").unwrap();
     let hna4_json_raw = Command::new("sh")
         .arg("-c")
         .arg("echo /hna | nc 127.0.0.1 9090")
@@ -145,15 +104,16 @@ fn main() {
         .expect("failed to execute process");
     let hna4_json = str::from_utf8(&hna4_json_raw.stdout).unwrap();
 
+    // TODO: add IPv6-stuff
     // let hna6_raw = fs::read_to_string("raw/hna6_2006.txt").unwrap();
+
     // let hostnames_raw = fs::read_to_string("raw/olsr.txt").unwrap();
     let hostnames_raw = fs::read_to_string("/tmp/hosts/olsr").unwrap();
 
     let mut hna_tree = BTreeMap::new();
     let mut name_tree = BTreeMap::new();
 
-    // read_hna_to_tree(&mut hna_tree, hna4_raw);
-    read_hna_to_tree_json(&mut hna_tree, &hna4_json);
+    read_hna_to_tree(&mut hna_tree, &hna4_json);
     read_hosts_to_tree(&mut name_tree, hostnames_raw);
 
     // merge hostnames to hna
