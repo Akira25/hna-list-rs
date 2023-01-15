@@ -1,0 +1,989 @@
+### this /etc/hosts file is overwritten regularly by olsrd
+### do not edit
+
+127.0.0.1	localhost
+::1		localhost
+
+10.31.43.188	fffw-dev.olsr	# myself
+10.230.98.1 fffw-gut-gw.olsr	# 10.230.98.1
+10.36.197.66	mid1.fffw-gut-gw.olsr	# 10.230.98.1 (mid #1)
+10.31.124.199	NeueRepublikFunk.olsr	# 10.31.124.199
+10.36.197.186	mid1.NeueRepublikFunk.olsr	# 10.31.124.199 (mid #1)
+10.36.243.194	perleberger36-turm-2ghz-no.olsr	# 10.36.243.194
+10.36.243.225	mid1.perleberger36-turm-2ghz-no.olsr	# 10.36.243.194 (mid #1)
+10.31.27.245	torte-mela.olsr	# 10.31.27.245
+10.36.197.120	mid1.torte-mela.olsr	# 10.31.27.245 (mid #1)
+10.31.81.30	sama-saarbruecker.olsr	# 10.31.79.176
+10.31.81.29	sama-zwingli.olsr	# 10.31.79.176
+10.31.81.23	sama-west-5ghz.olsr	# 10.31.79.176
+10.31.81.22	sama-sued-5ghz.olsr	# 10.31.79.176
+10.31.81.21	sama-ost-5ghz.olsr	# 10.31.79.176
+10.31.81.20	sama-nord-5ghz.olsr	# 10.31.79.176
+10.31.81.13	sama-west-nf-5ghz.olsr	# 10.31.79.176
+10.31.81.12	sama-sued-nf-5ghz.olsr	# 10.31.79.176
+10.31.81.11	sama-ost-nf-5ghz.olsr	# 10.31.79.176
+10.31.81.10	sama-nord-nf-5ghz.olsr	# 10.31.79.176
+10.31.81.3	sama-poe-2.olsr	# 10.31.79.176
+10.31.81.2	sama-poe-1.olsr	# 10.31.79.176
+10.31.79.176	sama-core.olsr	# 10.31.79.176
+10.31.79.181	mid1.sama-core.olsr	# 10.31.79.176 (mid #1)
+10.31.79.180	mid2.sama-core.olsr	# 10.31.79.176 (mid #2)
+10.31.79.179	mid3.sama-core.olsr	# 10.31.79.176 (mid #3)
+10.31.79.178	mid4.sama-core.olsr	# 10.31.79.176 (mid #4)
+10.31.79.177	mid5.sama-core.olsr	# 10.31.79.176 (mid #5)
+10.35.255.168	cottbus-pipapo_foyer.olsr	# 10.35.255.168
+10.36.197.64	mid1.cottbus-pipapo_foyer.olsr	# 10.35.255.168 (mid #1)
+10.36.197.51	thw-onko.olsr	# 10.36.197.51
+10.36.197.41	mid1.thw-onko.olsr	# 10.36.197.51 (mid #1)
+10.36.197.53	THW_OSEE.olsr	# 10.36.197.53
+10.31.26.60	FrischAuf-Suedost-2GHz.olsr	# 10.31.26.60
+10.31.26.61	mid1.FrischAuf-Suedost-2GHz.olsr	# 10.31.26.60 (mid #1)
+10.31.42.208	ziegenhof.olsr	# 10.31.42.208
+10.36.197.34	mid1.ziegenhof.olsr	# 10.31.42.208 (mid #1)
+10.31.87.125	thw-opot.olsr	# 10.31.87.125
+10.36.197.185	mid1.thw-opot.olsr	# 10.31.87.125 (mid #1)
+10.31.52.155	kls0e-2up.olsr	# 10.31.52.155
+10.31.52.159	mid1.kls0e-2up.olsr	# 10.31.52.155 (mid #1)
+10.36.102.129	evi37.olsr	# 10.36.102.129
+10.36.197.236	mid1.evi37.olsr	# 10.36.102.129 (mid #1)
+10.36.102.137	mid2.evi37.olsr	# 10.36.102.129 (mid #2)
+10.36.102.133	mid3.evi37.olsr	# 10.36.102.129 (mid #3)
+10.31.27.213	f15-sw3.olsr	# 10.31.27.213
+10.31.85.57	k12-ff-praxis.olsr	# 10.31.85.57
+10.31.98.181	mid1.k12-ff-praxis.olsr	# 10.31.85.57 (mid #1)
+10.31.85.59	mid2.k12-ff-praxis.olsr	# 10.31.85.57 (mid #2)
+10.31.85.97	mid3.k12-ff-praxis.olsr	# 10.31.85.57 (mid #3)
+10.31.85.58	mid4.k12-ff-praxis.olsr	# 10.31.85.57 (mid #4)
+10.31.92.7	hdm-switch.olsr	# 10.36.166.143
+10.31.92.6	hds-hausd-switch.olsr	# 10.36.166.143
+10.31.92.5	hds-hausc-switch.olsr	# 10.36.166.143
+10.31.92.4	hds-hausb-switch.olsr	# 10.36.166.143
+10.31.92.3	hds-hausa-switch.olsr	# 10.36.166.143
+10.36.166.143	hds-ffraum.olsr	# 10.36.166.143
+10.36.166.149	mid1.hds-ffraum.olsr	# 10.36.166.143 (mid #1)
+10.36.166.142	mid2.hds-ffraum.olsr	# 10.36.166.143 (mid #2)
+10.36.166.144	mid3.hds-ffraum.olsr	# 10.36.166.143 (mid #3)
+10.31.96.216	fesev-core.olsr	# 10.31.96.216
+10.31.36.45	torte-hof.olsr	# 10.31.36.45
+10.36.197.152	mid1.torte-hof.olsr	# 10.31.36.45 (mid #1)
+10.31.54.217	weidenbaum-r2.olsr	# 10.31.54.217
+10.31.54.218	mid1.weidenbaum-r2.olsr	# 10.31.54.217 (mid #1)
+10.31.11.101	ohlauer-gw.olsr	# 10.31.11.101
+10.30.96.6	fffw-00003.olsr	# 10.30.96.6
+10.36.197.254	mid1.fffw-00003.olsr	# 10.30.96.6 (mid #1)
+10.31.13.104	An_den_Haselbueschen_3A.olsr	# 10.31.13.104
+10.36.197.128	mid1.An_den_Haselbueschen_3A.olsr	# 10.31.13.104 (mid #1)
+10.31.13.105	mid2.An_den_Haselbueschen_3A.olsr	# 10.31.13.104 (mid #2)
+10.31.45.139	kiezhaus-eg.olsr	# 10.31.45.139
+10.36.197.159	mid1.kiezhaus-eg.olsr	# 10.31.45.139 (mid #1)
+10.31.45.140	mid2.kiezhaus-eg.olsr	# 10.31.45.139 (mid #2)
+10.31.131.22	dtmb-m2-2.olsr	# 10.31.131.32
+10.31.131.20	dtmb-m2-1.olsr	# 10.31.131.32
+10.31.131.15	dtmb-y.olsr	# 10.31.131.32
+10.31.131.14	dtmb-x.olsr	# 10.31.131.32
+10.31.131.13	dtmb-laden.olsr	# 10.31.131.32
+10.31.131.12	dtmb-cbase.olsr	# 10.31.131.32
+10.31.131.11	dtmb-rhxb.olsr	# 10.31.131.32
+10.31.131.10	dtmb-ak36.olsr	# 10.31.131.32
+10.31.131.3	dtmb-sw2.olsr	# 10.31.131.32
+10.31.131.2	dtmb-sw1.olsr	# 10.31.131.32
+10.31.131.32	dtmb-core.olsr	# 10.31.131.32
+10.31.131.40	mid1.dtmb-core.olsr	# 10.31.131.32 (mid #1)
+10.31.131.39	mid2.dtmb-core.olsr	# 10.31.131.32 (mid #2)
+10.31.131.38	mid3.dtmb-core.olsr	# 10.31.131.32 (mid #3)
+10.31.131.37	mid4.dtmb-core.olsr	# 10.31.131.32 (mid #4)
+10.31.131.36	mid5.dtmb-core.olsr	# 10.31.131.32 (mid #5)
+10.31.131.35	mid6.dtmb-core.olsr	# 10.31.131.32 (mid #6)
+10.31.131.34	mid7.dtmb-core.olsr	# 10.31.131.32 (mid #7)
+10.31.131.33	mid8.dtmb-core.olsr	# 10.31.131.32 (mid #8)
+10.230.145.162	nhu-geibel.olsr	# 10.230.145.162
+10.30.96.3	fffw-00001.olsr	# 10.30.96.3
+10.36.197.96	mid1.fffw-00001.olsr	# 10.30.96.3 (mid #1)
+10.31.45.133	rumpelkammer.olsr	# 10.31.45.133
+10.31.48.172	kls0e-trg.olsr	# 10.31.48.172
+10.36.197.76	mid1.kls0e-trg.olsr	# 10.31.48.172 (mid #1)
+10.31.48.173	mid2.kls0e-trg.olsr	# 10.31.48.172 (mid #2)
+10.31.51.197	AP4.freifunk.net.olsr	# 10.31.51.197
+10.31.119.29	freifunk-simander.olsr	# 10.31.119.29
+10.36.197.168	mid1.freifunk-simander.olsr	# 10.31.119.29 (mid #1)
+10.31.119.30	mid2.freifunk-simander.olsr	# 10.31.119.29 (mid #2)
+10.31.44.41	flummi02.olsr	# 10.31.44.41
+10.36.197.167	mid1.flummi02.olsr	# 10.31.44.41 (mid #1)
+10.31.77.162	gubener-sama.olsr	# 10.31.77.192
+10.31.77.192	gubener-core.olsr	# 10.31.77.192
+10.31.77.194	mid1.gubener-core.olsr	# 10.31.77.192 (mid #1)
+10.31.77.193	mid2.gubener-core.olsr	# 10.31.77.192 (mid #2)
+10.31.75.48	kls0e-hry.olsr	# 10.31.75.48
+10.31.70.133	mid1.kls0e-hry.olsr	# 10.31.75.48 (mid #1)
+10.31.54.97	fardf.olsr	# 10.31.54.97
+10.31.52.65	mid1.fardf.olsr	# 10.31.54.97 (mid #1)
+10.31.52.64	mid2.fardf.olsr	# 10.31.54.97 (mid #2)
+10.31.54.125	mid3.fardf.olsr	# 10.31.54.97 (mid #3)
+10.31.54.121	mid4.fardf.olsr	# 10.31.54.97 (mid #4)
+10.31.54.117	mid5.fardf.olsr	# 10.31.54.97 (mid #5)
+10.31.54.113	mid6.fardf.olsr	# 10.31.54.97 (mid #6)
+10.31.54.109	mid7.fardf.olsr	# 10.31.54.97 (mid #7)
+10.31.54.105	mid8.fardf.olsr	# 10.31.54.97 (mid #8)
+10.31.54.101	mid9.fardf.olsr	# 10.31.54.97 (mid #9)
+10.31.30.102	weissenseerspitze.olsr	# 10.31.30.102
+10.36.197.109	mid1.weissenseerspitze.olsr	# 10.31.30.102 (mid #1)
+10.31.45.52	FrankfurterM2.olsr	# 10.31.45.52
+10.36.166.130	hds-sama.olsr	# 10.36.166.121
+10.36.166.134	hds-simeon.olsr	# 10.36.166.121
+10.36.166.126	hds-saarbruecker.olsr	# 10.36.166.121
+10.36.166.122	hds-nord.olsr	# 10.36.166.121
+10.36.166.121	hds-core.olsr	# 10.36.166.121
+10.36.166.129	mid1.hds-core.olsr	# 10.36.166.121 (mid #1)
+10.36.166.133	mid2.hds-core.olsr	# 10.36.166.121 (mid #2)
+10.36.166.125	mid3.hds-core.olsr	# 10.36.166.121 (mid #3)
+10.31.97.67	schreiner-core.olsr	# 10.31.97.67
+10.31.97.69	mid1.schreiner-core.olsr	# 10.31.97.67 (mid #1)
+10.31.97.68	mid2.schreiner-core.olsr	# 10.31.97.67 (mid #2)
+10.30.96.20	fffw-00013.olsr	# 10.30.96.20
+10.36.197.27	mid1.fffw-00013.olsr	# 10.30.96.20 (mid #1)
+10.30.96.21	mid2.fffw-00013.olsr	# 10.30.96.20 (mid #2)
+10.31.26.41	fkkwedding-0.olsr	# 10.31.26.41
+10.36.197.154	mid1.fkkwedding-0.olsr	# 10.31.26.41 (mid #1)
+10.31.26.42	mid2.fkkwedding-0.olsr	# 10.31.26.41 (mid #2)
+10.31.20.181	stadtoase-balkon.olsr	# 10.31.20.181
+10.36.254.75	kosmos-wama-back-l.olsr	# 10.36.254.75
+10.36.254.76	mid1.kosmos-wama-back-l.olsr	# 10.36.254.75 (mid #1)
+10.31.83.91	devislandfreifunk42.olsr	# 10.31.83.91
+10.36.197.105	mid1.devislandfreifunk42.olsr	# 10.31.83.91 (mid #1)
+10.31.83.92	mid2.devislandfreifunk42.olsr	# 10.31.83.91 (mid #2)
+10.31.28.17	Area51.olsr	# 10.31.28.17
+10.36.160.57	mid1.Area51.olsr	# 10.31.28.17 (mid #1)
+10.31.28.18	mid2.Area51.olsr	# 10.31.28.17 (mid #2)
+10.31.3.115	dreispitz.freifunk.net.olsr	# 10.31.3.115
+10.36.197.137	mid1.dreispitz.freifunk.net.olsr	# 10.31.3.115 (mid #1)
+10.36.197.235	thw-otre.olsr	# 10.36.197.235
+10.230.145.161	nhu-emma.olsr	# 10.230.145.161
+10.230.145.168	mid1.nhu-emma.olsr	# 10.230.145.161 (mid #1)
+10.230.33.233	f15-cafe.olsr	# 10.230.33.233
+10.36.197.252	mid1.f15-cafe.olsr	# 10.230.33.233 (mid #1)
+10.230.57.136	humpty-frei-rhxb.olsr	# 10.230.57.136
+10.230.57.135	mid1.humpty-frei-rhxb.olsr	# 10.230.57.136 (mid #1)
+10.230.145.170	nhu-rhxb.olsr	# 10.230.145.170
+10.230.145.163	mid1.nhu-rhxb.olsr	# 10.230.145.170 (mid #1)
+10.230.146.211	Ahof-frieden-bbbgw.olsr	# 10.230.146.211
+10.36.197.169	mid1.Ahof-frieden-bbbgw.olsr	# 10.230.146.211 (mid #1)
+10.31.51.186	funkpilz.olsr	# 10.31.51.186
+10.31.1.180	MachnowerStr02497324.olsr	# 10.31.1.180
+10.36.197.28	mid1.MachnowerStr02497324.olsr	# 10.31.1.180 (mid #1)
+10.31.1.181	mid2.MachnowerStr02497324.olsr	# 10.31.1.180 (mid #2)
+10.31.37.234	THW_OFWD.olsr	# 10.31.37.234
+10.36.197.181	mid1.THW_OFWD.olsr	# 10.31.37.234 (mid #1)
+10.230.18.192	chris-s2.olsr	# 10.230.18.192
+10.230.77.215	alfred-randt-o.olsr	# 10.230.77.215
+10.230.77.216	mid1.alfred-randt-o.olsr	# 10.230.77.215 (mid #1)
+10.230.77.214	alfred-randt-m.olsr	# 10.230.77.214
+10.230.145.171	nhu-nachbarn.olsr	# 10.230.145.171
+10.230.145.164	mid1.nhu-nachbarn.olsr	# 10.230.145.171 (mid #1)
+10.230.38.204	a.bbb-vpn.olsr	# 10.230.38.204
+10.36.197.1	mid1.a.bbb-vpn.olsr	# 10.230.38.204 (mid #1)
+10.36.197.3	mid2.a.bbb-vpn.olsr	# 10.230.38.204 (mid #2)
+10.36.197.5	mid3.a.bbb-vpn.olsr	# 10.230.38.204 (mid #3)
+10.36.197.6	mid4.a.bbb-vpn.olsr	# 10.230.38.204 (mid #4)
+10.31.5.66	dtmb-ladestr-bbb-nord.olsr	# 10.31.5.66
+10.31.5.65	mid1.dtmb-ladestr-bbb-nord.olsr	# 10.31.5.66 (mid #1)
+10.31.14.84	f17-freifunk.olsr	# 10.31.14.84
+10.31.14.136	sange-o-2ghz-cpe.olsr	# 10.31.14.136
+10.31.14.137	mid1.sange-o-2ghz-cpe.olsr	# 10.31.14.136 (mid #1)
+10.230.221.133	ZuhauseEV.olsr	# 10.230.221.133
+10.36.254.66	kosmos-wama.olsr	# 10.36.254.66
+10.36.254.93	mid1.kosmos-wama.olsr	# 10.36.254.66 (mid #1)
+10.230.51.105	mid2.kosmos-wama.olsr	# 10.36.254.66 (mid #2)
+10.36.254.89	mid3.kosmos-wama.olsr	# 10.36.254.66 (mid #3)
+10.31.52.187	scharni-ap4.olsr	# 10.31.252.192
+10.31.52.188	scharni-ap3.olsr	# 10.31.252.192
+10.31.52.189	scharni-ap2.olsr	# 10.31.252.192
+10.31.52.190	scharni-ap1.olsr	# 10.31.252.192
+10.31.52.164	scharni-zwingli.olsr	# 10.31.252.192
+10.31.52.163	scharni-sama.olsr	# 10.31.252.192
+10.31.52.162	scharni-switch.olsr	# 10.31.252.192
+10.31.252.192	scharni-core.olsr	# 10.31.252.192
+10.31.252.194	mid1.scharni-core.olsr	# 10.31.252.192 (mid #1)
+10.31.252.193	mid2.scharni-core.olsr	# 10.31.252.192 (mid #2)
+10.31.71.185	warschsalon-sued.olsr	# 10.31.71.185
+10.31.82.216	kiehlufer-nf-wbp4.olsr	# 10.31.82.140
+10.31.82.215	kiehlufer-nf-wbp3.olsr	# 10.31.82.140
+10.31.82.214	kiehlufer-nf-wbp2.olsr	# 10.31.82.140
+10.31.82.213	kiehlufer-nf-wbp1.olsr	# 10.31.82.140
+10.31.82.212	kiehlufer-vaterhaus.olsr	# 10.31.82.140
+10.31.82.211	kiehlufer-rhnk.olsr	# 10.31.82.140
+10.31.82.210	kiehlufer-3000.olsr	# 10.31.82.140
+10.31.82.140	kiehlufer-core.olsr	# 10.31.82.140
+10.31.108.145	mid1.kiehlufer-core.olsr	# 10.31.82.140 (mid #1)
+10.31.82.142	mid2.kiehlufer-core.olsr	# 10.31.82.140 (mid #2)
+10.31.82.141	mid3.kiehlufer-core.olsr	# 10.31.82.140 (mid #3)
+10.230.2.16	philmel-nord.olsr	# 10.230.2.16
+10.230.2.2	mid1.philmel-nord.olsr	# 10.230.2.16 (mid #1)
+10.31.81.86	rigaer83-back-2.olsr	# 10.31.79.67
+10.31.81.87	rigaer83-back-5.olsr	# 10.31.79.67
+10.31.81.88	rigaer83-front-2.olsr	# 10.31.79.67
+10.31.81.89	rigaer83-front-5.olsr	# 10.31.79.67
+10.31.81.84	rigaer83-zwingli.olsr	# 10.31.79.67
+10.31.81.83	rigaer83-sama.olsr	# 10.31.79.67
+10.31.81.82	rigaer83-poe.olsr	# 10.31.79.67
+10.31.79.67	rigaer83-core.olsr	# 10.31.79.67
+10.31.54.227	mid1.rigaer83-core.olsr	# 10.31.79.67 (mid #1)
+10.31.130.160	ak36-gw.olsr	# 10.31.130.160
+10.31.130.164	mid1.ak36-gw.olsr	# 10.31.130.160 (mid #1)
+10.31.130.163	mid2.ak36-gw.olsr	# 10.31.130.160 (mid #2)
+10.31.130.162	mid3.ak36-gw.olsr	# 10.31.130.160 (mid #3)
+10.31.130.161	mid4.ak36-gw.olsr	# 10.31.130.160 (mid #4)
+10.31.44.200	mueggel-int6.olsr	# 10.31.44.200
+10.230.147.158	mid1.mueggel-int6.olsr	# 10.31.44.200 (mid #1)
+10.230.77.208	alfred-randt.olsr	# 10.230.77.208
+10.230.77.210	mid1.alfred-randt.olsr	# 10.230.77.208 (mid #1)
+10.36.197.54	mid2.alfred-randt.olsr	# 10.230.77.208 (mid #2)
+10.230.77.209	mid3.alfred-randt.olsr	# 10.230.77.208 (mid #3)
+10.31.54.145	oranienburger285.olsr	# 10.31.54.145
+10.36.243.199	perleberger36-hof-2ghz-s.olsr	# 10.36.243.199
+10.36.243.230	mid1.perleberger36-hof-2ghz-s.olsr	# 10.36.243.199 (mid #1)
+10.31.85.49	k12-ff-hof2a.olsr	# 10.31.85.49
+10.31.85.52	mid1.k12-ff-hof2a.olsr	# 10.31.85.49 (mid #1)
+10.31.21.125	SAm0815-test-nsm.olsr	# 10.31.21.125
+10.31.7.34	f2a-rooftop-sued-2ghz.olsr	# 10.31.7.34
+10.31.7.33	mid1.f2a-rooftop-sued-2ghz.olsr	# 10.31.7.34 (mid #1)
+10.31.125.8	manstein10-m2-w.olsr	# 10.31.125.32
+10.31.125.7	manstein10-m2-s.olsr	# 10.31.125.32
+10.31.125.6	manstein10-m5-w5.olsr	# 10.31.125.32
+10.31.125.5	manstein10-m5-loco-s5.olsr	# 10.31.125.32
+10.31.125.4	manstein10-rhxb.olsr	# 10.31.125.32
+10.31.125.3	manstein10-poe-switch-2.olsr	# 10.31.125.32
+10.31.125.2	manstein10-poe-switch-1.olsr	# 10.31.125.32
+10.31.125.32	manstein10-core.olsr	# 10.31.125.32
+10.31.125.34	mid1.manstein10-core.olsr	# 10.31.125.32 (mid #1)
+10.31.125.33	mid2.manstein10-core.olsr	# 10.31.125.32 (mid #2)
+10.31.40.14	fffw-wr1043-test.olsr	# 10.31.40.14
+10.230.242.136	FrischAuf-Core2.olsr	# 10.230.242.136
+10.230.242.133	mid1.FrischAuf-Core2.olsr	# 10.230.242.136 (mid #1)
+10.31.19.19	BerlinerTeesalon.olsr	# 10.31.19.19
+10.36.197.215	mid1.BerlinerTeesalon.olsr	# 10.31.19.19 (mid #1)
+10.31.96.103	kls0e-uw3.olsr	# 10.31.96.103
+10.31.70.134	mid1.kls0e-uw3.olsr	# 10.31.96.103 (mid #1)
+10.31.67.89	kls0e-sto-7530.olsr	# 10.31.67.89
+10.31.67.91	mid1.kls0e-sto-7530.olsr	# 10.31.67.89 (mid #1)
+10.31.67.90	mid2.kls0e-sto-7530.olsr	# 10.31.67.89 (mid #2)
+10.31.8.6	ska95-core.olsr	# 10.31.8.6
+10.31.8.25	mid1.ska95-core.olsr	# 10.31.8.6 (mid #1)
+10.31.8.1	mid2.ska95-core.olsr	# 10.31.8.6 (mid #2)
+10.31.8.7	mid3.ska95-core.olsr	# 10.31.8.6 (mid #3)
+10.31.0.239	siegfried21-sued.olsr	# 10.31.0.239
+10.230.119.232	mid1.siegfried21-sued.olsr	# 10.31.0.239 (mid #1)
+10.31.0.240	mid2.siegfried21-sued.olsr	# 10.31.0.239 (mid #2)
+10.31.7.65	f2a-space-ap01.olsr	# 10.31.7.65
+10.31.7.66	mid1.f2a-space-ap01.olsr	# 10.31.7.65 (mid #1)
+10.31.38.75	kls0e-35.olsr	# 10.31.38.75
+10.31.38.76	mid1.kls0e-35.olsr	# 10.31.38.75 (mid #1)
+10.31.44.221	mueggel-int7.olsr	# 10.31.44.221
+10.230.119.237	mid1.mueggel-int7.olsr	# 10.31.44.221 (mid #1)
+10.31.28.187	10-36-79-193.olsr	# 10.31.28.187
+10.36.197.243	mid1.10-36-79-193.olsr	# 10.31.28.187 (mid #1)
+10.31.28.188	mid2.10-36-79-193.olsr	# 10.31.28.187 (mid #2)
+10.36.124.13	nau28.olsr	# 10.36.124.13
+10.36.124.15	mid1.nau28.olsr	# 10.36.124.13 (mid #1)
+10.31.80.163	olivenholz.olsr	# 10.31.80.163
+10.31.67.80	Ahoernchen2.olsr	# 10.31.67.80
+10.31.67.81	mid1.Ahoernchen2.olsr	# 10.31.67.80 (mid #1)
+10.31.32.190	kls0e-bam.olsr	# 10.31.32.190
+10.230.27.145	mid1.kls0e-bam.olsr	# 10.31.32.190 (mid #1)
+10.31.32.191	mid2.kls0e-bam.olsr	# 10.31.32.190 (mid #2)
+10.31.44.65	haralds-wanderrouter-001.olsr	# 10.31.44.65
+10.36.197.139	mid1.haralds-wanderrouter-001.olsr	# 10.31.44.65 (mid #1)
+10.31.44.66	mid2.haralds-wanderrouter-001.olsr	# 10.31.44.65 (mid #2)
+10.31.79.68	kls0e-54.olsr	# 10.31.79.68
+10.31.3.38	kls0e-fotokotti.olsr	# 10.31.3.38
+10.36.197.251	mid1.kls0e-fotokotti.olsr	# 10.31.3.38 (mid #1)
+10.31.3.39	mid2.kls0e-fotokotti.olsr	# 10.31.3.38 (mid #2)
+10.31.89.230	e16-core.olsr	# 10.31.89.230
+10.31.89.231	mid1.e16-core.olsr	# 10.31.89.230 (mid #1)
+10.31.28.153	notunterkunft-tieck17.olsr	# 10.31.28.153
+10.36.197.74	mid1.notunterkunft-tieck17.olsr	# 10.31.28.153 (mid #1)
+10.31.67.194	kls0e-sto.olsr	# 10.31.67.194
+10.31.70.131	mid1.kls0e-sto.olsr	# 10.31.67.194 (mid #1)
+10.31.67.192	mid2.kls0e-sto.olsr	# 10.31.67.194 (mid #2)
+10.36.217.96	Ahof-frieden03.olsr	# 10.36.217.96
+10.36.217.97	mid1.Ahof-frieden03.olsr	# 10.36.217.96 (mid #1)
+10.31.18.26	kls0e-d0nut.olsr	# 10.31.18.26
+10.31.70.129	mid1.kls0e-d0nut.olsr	# 10.31.18.26 (mid #1)
+10.36.197.98	mid2.kls0e-d0nut.olsr	# 10.31.18.26 (mid #2)
+10.31.18.107	mid3.kls0e-d0nut.olsr	# 10.31.18.26 (mid #3)
+10.31.97.77	kls0e-6o.olsr	# 10.31.97.77
+10.31.97.78	mid1.kls0e-6o.olsr	# 10.31.97.77 (mid #1)
+10.31.48.226	AP3.freifunk.net.olsr	# 10.31.48.226
+10.31.26.136	kls0e-w41.olsr	# 10.31.26.136
+10.36.197.32	mid1.kls0e-w41.olsr	# 10.31.26.136 (mid #1)
+10.31.26.137	mid2.kls0e-w41.olsr	# 10.31.26.136 (mid #2)
+10.36.254.73	kosmos-wama-cafe-r.olsr	# 10.36.254.73
+10.36.254.74	mid1.kosmos-wama-cafe-r.olsr	# 10.36.254.73 (mid #1)
+10.230.3.3	rhnk-ap-0.olsr	# 10.230.3.3
+10.31.9.224	k9-core.olsr	# 10.31.9.224
+10.31.9.241	mid1.k9-core.olsr	# 10.31.9.224 (mid #1)
+10.31.9.226	mid2.k9-core.olsr	# 10.31.9.224 (mid #2)
+10.31.9.225	mid3.k9-core.olsr	# 10.31.9.224 (mid #3)
+10.36.254.82	kosmos-ortolf202-ost.olsr	# 10.36.254.82
+10.230.205.9	mid1.kosmos-ortolf202-ost.olsr	# 10.36.254.82 (mid #1)
+10.230.51.109	mid2.kosmos-ortolf202-ost.olsr	# 10.36.254.82 (mid #2)
+10.36.254.83	mid3.kosmos-ortolf202-ost.olsr	# 10.36.254.82 (mid #3)
+10.31.124.209	baumex.olsr	# 10.31.124.209
+10.230.69.233	mid1.baumex.olsr	# 10.31.124.209 (mid #1)
+10.36.197.170	thw-freifunk-gfod.olsr	# 10.36.197.170
+10.230.18.189	chris-w2.olsr	# 10.230.18.189
+10.230.18.193	mid1.chris-w2.olsr	# 10.230.18.189 (mid #1)
+10.31.104.134	simeon-rhx.olsr	# 10.31.51.136
+10.31.104.133	simeon-emma.olsr	# 10.31.51.136
+10.31.104.132	simeon-nord.olsr	# 10.31.51.136
+10.31.104.131	simeon-mgh.olsr	# 10.31.51.136
+10.31.104.130	simeon-poe-switch.olsr	# 10.31.51.136
+10.31.51.136	simeon-core.olsr	# 10.31.51.136
+10.31.51.139	mid1.simeon-core.olsr	# 10.31.51.136 (mid #1)
+10.31.51.138	mid2.simeon-core.olsr	# 10.31.51.136 (mid #2)
+10.31.51.137	mid3.simeon-core.olsr	# 10.31.51.136 (mid #3)
+10.230.2.7	librenms.olsr	# 10.230.2.1
+10.230.2.7	thestore.olsr	# 10.230.2.1
+10.230.2.1	philmel-core.olsr	# 10.230.2.1
+10.230.2.190	mid1.philmel-core.olsr	# 10.230.2.1 (mid #1)
+10.230.2.186	mid2.philmel-core.olsr	# 10.230.2.1 (mid #2)
+10.230.2.182	mid3.philmel-core.olsr	# 10.230.2.1 (mid #3)
+10.230.2.178	mid4.philmel-core.olsr	# 10.230.2.1 (mid #4)
+10.230.2.174	mid5.philmel-core.olsr	# 10.230.2.1 (mid #5)
+10.230.2.170	mid6.philmel-core.olsr	# 10.230.2.1 (mid #6)
+10.230.2.166	mid7.philmel-core.olsr	# 10.230.2.1 (mid #7)
+10.230.2.162	mid8.philmel-core.olsr	# 10.230.2.1 (mid #8)
+10.31.39.24	brussel9.olsr	# 10.31.39.24
+10.36.160.61	mid1.brussel9.olsr	# 10.31.39.24 (mid #1)
+10.31.39.25	mid2.brussel9.olsr	# 10.31.39.24 (mid #2)
+10.36.197.196	10-31-76-65.olsr	# 10.36.197.196
+10.31.90.185	Ahof-frieden05.olsr	# 10.31.90.185
+10.31.90.187	mid1.Ahof-frieden05.olsr	# 10.31.90.185 (mid #1)
+10.31.90.186	mid2.Ahof-frieden05.olsr	# 10.31.90.185 (mid #2)
+10.31.0.22	delbrueck66.olsr	# 10.31.0.22
+10.31.0.40	mid1.delbrueck66.olsr	# 10.31.0.22 (mid #1)
+10.31.131.141	flughafen-ak36-legacy.olsr	# 10.31.131.192
+10.31.131.140	flughafen-garten.olsr	# 10.31.131.192
+10.31.131.139	flughafen-feld.olsr	# 10.31.131.192
+10.31.131.138	flughafen-zoll.olsr	# 10.31.131.192
+10.31.131.132	flughafen-rhxb.olsr	# 10.31.131.192
+10.31.131.131	flughafen-ak36.olsr	# 10.31.131.192
+10.31.131.130	flughafen-poe.olsr	# 10.31.131.192
+10.31.131.192	flughafen-core.olsr	# 10.31.131.192
+10.31.131.198	mid1.flughafen-core.olsr	# 10.31.131.192 (mid #1)
+10.31.131.197	mid2.flughafen-core.olsr	# 10.31.131.192 (mid #2)
+10.31.131.196	mid3.flughafen-core.olsr	# 10.31.131.192 (mid #3)
+10.31.131.195	mid4.flughafen-core.olsr	# 10.31.131.192 (mid #4)
+10.31.131.193	mid5.flughafen-core.olsr	# 10.31.131.192 (mid #5)
+10.36.243.193	perleberger36-turm-2ghz-nw.olsr	# 10.36.243.193
+10.36.243.224	mid1.perleberger36-turm-2ghz-nw.olsr	# 10.36.243.193 (mid #1)
+10.36.254.97	kosmos-medienetage.olsr	# 10.36.254.97
+10.36.197.111	mid1.kosmos-medienetage.olsr	# 10.36.254.97 (mid #1)
+10.230.109.1	Desmond.olsr	# 10.230.109.1
+10.230.109.2	mid1.Desmond.olsr	# 10.230.109.1 (mid #1)
+10.31.30.138	fffw-touribuero.olsr	# 10.31.30.138
+10.36.197.113	mid1.fffw-touribuero.olsr	# 10.31.30.138 (mid #1)
+10.31.45.253	fkkwedding-1.olsr	# 10.31.45.253
+10.31.45.254	mid1.fkkwedding-1.olsr	# 10.31.45.253 (mid #1)
+10.31.113.110	buergerhaus_hirschhof.olsr	# 10.31.113.110
+10.31.119.16	mid1.buergerhaus_hirschhof.olsr	# 10.31.113.110 (mid #1)
+10.31.113.111	mid2.buergerhaus_hirschhof.olsr	# 10.31.113.110 (mid #2)
+10.31.23.146	Schwalbenweg18-core.olsr	# 10.31.23.146
+10.31.32.14	tommyhausff2.olsr	# 10.31.32.14
+10.31.32.15	mid1.tommyhausff2.olsr	# 10.31.32.14 (mid #1)
+10.31.44.242	fkkostkreuz.olsr	# 10.31.44.242
+10.36.197.36	mid1.fkkostkreuz.olsr	# 10.31.44.242 (mid #1)
+10.31.44.243	mid2.fkkostkreuz.olsr	# 10.31.44.242 (mid #2)
+10.31.97.71	AntiNet.olsr	# 10.31.97.71
+10.36.197.140	mid1.AntiNet.olsr	# 10.31.97.71 (mid #1)
+10.36.197.38	mid2.AntiNet.olsr	# 10.31.97.71 (mid #2)
+10.36.197.68	mid3.AntiNet.olsr	# 10.31.97.71 (mid #3)
+10.36.197.176	mid4.AntiNet.olsr	# 10.31.97.71 (mid #4)
+10.31.10.229	lilo2_wdr3600r.olsr	# 10.31.10.229
+10.36.197.50	mid1.lilo2_wdr3600r.olsr	# 10.31.10.229 (mid #1)
+10.230.7.71	Coloniaallee.olsr	# 10.230.7.71
+10.230.38.201	mid1.Coloniaallee.olsr	# 10.230.7.71 (mid #1)
+10.230.33.58	mid2.Coloniaallee.olsr	# 10.230.7.71 (mid #2)
+10.31.87.46	k12-sunset.olsr	# 10.31.85.63
+10.31.85.63	k12-ff-2.olsr	# 10.31.85.63
+10.31.87.1	mid1.k12-ff-2.olsr	# 10.31.85.63 (mid #1)
+10.31.87.0	mid2.k12-ff-2.olsr	# 10.31.85.63 (mid #2)
+10.230.89.5	agym-simeon.olsr	# 10.230.89.128
+10.230.89.4	agym-zwingli.olsr	# 10.230.89.128
+10.230.89.3	agym-cloudkey.olsr	# 10.230.89.128
+10.230.89.2	agym-switch-roof.olsr	# 10.230.89.128
+10.230.89.128	agym-core.olsr	# 10.230.89.128
+10.230.89.129	mid1.agym-core.olsr	# 10.230.89.128 (mid #1)
+10.31.52.49	chris-gueffroy.olsr	# 10.31.52.49
+10.36.197.57	mid1.chris-gueffroy.olsr	# 10.31.52.49 (mid #1)
+10.31.24.205	Jump-eV-main.olsr	# 10.31.24.205
+10.36.197.65	mid1.Jump-eV-main.olsr	# 10.31.24.205 (mid #1)
+10.31.24.206	mid2.Jump-eV-main.olsr	# 10.31.24.205 (mid #2)
+10.31.23.24	xdorf-core.olsr	# 10.31.23.24
+10.31.113.97	blackbox.olsr	# 10.31.113.97
+10.36.197.29	mid1.blackbox.olsr	# 10.31.113.97 (mid #1)
+10.31.11.25	emma-sso-5ghz.olsr	# 10.31.11.65
+10.31.11.24	emma-oso-5ghz.olsr	# 10.31.11.65
+10.31.11.23	emma-wnw-5ghz.olsr	# 10.31.11.65
+10.31.11.22	emma-wsw-5ghz.olsr	# 10.31.11.65
+10.31.11.21	emma-ono-5ghz.olsr	# 10.31.11.65
+10.31.11.20	emma-nno-5ghz.olsr	# 10.31.11.65
+10.31.11.19	emma-nnw-5ghz.olsr	# 10.31.11.65
+10.31.11.18	emma-ssw-uplink.olsr	# 10.31.11.65
+10.31.11.17	emma-nnw-2ghz.olsr	# 10.31.11.65
+10.31.11.16	emma-wnw-2ghz.olsr	# 10.31.11.65
+10.31.11.15	emma-wsw-2ghz.olsr	# 10.31.11.65
+10.31.11.13	emma-sso-2ghz.olsr	# 10.31.11.65
+10.31.11.12	emma-oso-2ghz.olsr	# 10.31.11.65
+10.31.11.11	emma-ono-2ghz.olsr	# 10.31.11.65
+10.31.11.5	emma-switch-nw.olsr	# 10.31.11.65
+10.31.11.4	emma-switch-sw.olsr	# 10.31.11.65
+10.31.11.3	emma-switch-so.olsr	# 10.31.11.65
+10.31.11.2	emma-switch-no.olsr	# 10.31.11.65
+10.31.11.65	emma-core.olsr	# 10.31.11.65
+10.31.11.93	mid1.emma-core.olsr	# 10.31.11.65 (mid #1)
+10.31.11.89	mid2.emma-core.olsr	# 10.31.11.65 (mid #2)
+10.31.11.85	mid3.emma-core.olsr	# 10.31.11.65 (mid #3)
+10.31.11.97	mid4.emma-core.olsr	# 10.31.11.65 (mid #4)
+10.31.11.77	mid5.emma-core.olsr	# 10.31.11.65 (mid #5)
+10.31.11.73	mid6.emma-core.olsr	# 10.31.11.65 (mid #6)
+10.31.11.69	mid7.emma-core.olsr	# 10.31.11.65 (mid #7)
+10.230.69.193	c-base-core.olsr	# 10.230.69.193
+10.230.69.225	mid1.c-base-core.olsr	# 10.230.69.193 (mid #1)
+10.31.9.254	k9-ff-gw.olsr	# 10.31.9.254
+10.230.23.141	beuth0.olsr	# 10.230.23.141
+10.230.23.158	mid1.beuth0.olsr	# 10.230.23.141 (mid #1)
+10.230.23.149	mid2.beuth0.olsr	# 10.230.23.141 (mid #2)
+10.230.23.148	mid3.beuth0.olsr	# 10.230.23.141 (mid #3)
+10.230.23.147	mid4.beuth0.olsr	# 10.230.23.141 (mid #4)
+10.230.23.146	mid5.beuth0.olsr	# 10.230.23.141 (mid #5)
+10.230.23.145	mid6.beuth0.olsr	# 10.230.23.141 (mid #6)
+10.230.23.144	mid7.beuth0.olsr	# 10.230.23.141 (mid #7)
+10.230.23.143	mid8.beuth0.olsr	# 10.230.23.141 (mid #8)
+10.230.23.142	mid9.beuth0.olsr	# 10.230.23.141 (mid #9)
+10.31.51.150	funkigel.olsr	# 10.31.51.150
+10.31.51.160	mid1.funkigel.olsr	# 10.31.51.150 (mid #1)
+10.31.80.161	marienfelder66.olsr	# 10.31.80.161
+10.31.45.78	humpty-frei-obentraut-back.olsr	# 10.31.45.78
+10.31.45.79	mid1.humpty-frei-obentraut-back.olsr	# 10.31.45.78 (mid #1)
+10.31.97.54	2.-Lychenerstr-76-HH.olsr	# 10.31.97.54
+10.36.197.187	mid1.2.-Lychenerstr-76-HH.olsr	# 10.31.97.54 (mid #1)
+10.31.97.55	mid2.2.-Lychenerstr-76-HH.olsr	# 10.31.97.54 (mid #2)
+10.31.106.66	mgh-simeon.olsr	# 10.31.30.155
+10.31.30.155	mgh-core.olsr	# 10.31.30.155
+10.31.107.15	Taubenschlag.olsr	# 10.31.107.15
+10.31.107.13	mid1.Taubenschlag.olsr	# 10.31.107.15 (mid #1)
+10.31.107.14	mid2.Taubenschlag.olsr	# 10.31.107.15 (mid #2)
+10.31.13.208	Vogelgesang.olsr	# 10.31.13.208
+10.31.110.97	mid1.Vogelgesang.olsr	# 10.31.13.208 (mid #1)
+10.31.52.206	mid2.Vogelgesang.olsr	# 10.31.13.208 (mid #2)
+10.31.26.186	schleidenplatz-core.olsr	# 10.31.26.186
+10.31.26.188	mid1.schleidenplatz-core.olsr	# 10.31.26.186 (mid #1)
+10.31.26.187	mid2.schleidenplatz-core.olsr	# 10.31.26.186 (mid #2)
+10.31.12.192	Tabor19.olsr	# 10.31.12.192
+10.230.66.1	mid1.Tabor19.olsr	# 10.31.12.192 (mid #1)
+10.31.12.193	mid2.Tabor19.olsr	# 10.31.12.192 (mid #2)
+10.31.35.212	rst-lede-01.olsr	# 10.31.35.212
+10.36.197.112	mid1.rst-lede-01.olsr	# 10.31.35.212 (mid #1)
+10.31.108.144	fffw-schnittchenhaus.olsr	# 10.31.108.144
+10.36.197.119	mid1.fffw-schnittchenhaus.olsr	# 10.31.108.144 (mid #1)
+10.31.35.64	Elektra-Dach.olsr	# 10.31.35.64
+10.230.3.161	refugees-haarlemer.olsr	# 10.230.3.161
+10.31.8.97	rixbox-core.olsr	# 10.31.8.97
+10.31.29.65	fffw-parkclub.olsr	# 10.31.29.65
+10.36.197.39	mid1.fffw-parkclub.olsr	# 10.31.29.65 (mid #1)
+10.31.83.56	saarbruecker-gw.olsr	# 10.31.83.56
+10.31.83.58	mid1.saarbruecker-gw.olsr	# 10.31.83.56 (mid #1)
+10.31.83.57	mid2.saarbruecker-gw.olsr	# 10.31.83.56 (mid #2)
+10.31.32.17	tommyhausff3.olsr	# 10.31.32.17
+10.36.197.118	mid1.tommyhausff3.olsr	# 10.31.32.17 (mid #1)
+10.31.32.18	mid2.tommyhausff3.olsr	# 10.31.32.17 (mid #2)
+10.31.84.194	colbe15-ap1.olsr	# 10.31.52.237
+10.31.52.237	colbe15-core.olsr	# 10.31.52.237
+10.31.127.160	l105-gw.olsr	# 10.31.127.160
+10.31.127.161	mid1.l105-gw.olsr	# 10.31.127.160 (mid #1)
+10.31.14.203	skrik-ff-2.olsr	# 10.31.14.203
+10.31.75.43	dorfplatz-ap4.olsr	# 10.31.74.220
+10.31.75.44	dorfplatz-ap3.olsr	# 10.31.74.220
+10.31.75.45	dorfplatz-ap2.olsr	# 10.31.74.220
+10.31.75.46	dorfplatz-ap1.olsr	# 10.31.74.220
+10.31.75.36	dorfplatz-zwingli.olsr	# 10.31.74.220
+10.31.75.35	dorfplatz-sama.olsr	# 10.31.74.220
+10.31.75.34	dorfplatz-poe-switch.olsr	# 10.31.74.220
+10.31.74.220	dorfplatz-core.olsr	# 10.31.74.220
+10.31.74.221	mid1.dorfplatz-core.olsr	# 10.31.74.220 (mid #1)
+10.31.79.121	e16-k12.olsr	# 10.31.79.121
+10.31.87.14	mid1.e16-k12.olsr	# 10.31.79.121 (mid #1)
+10.31.48.250	humpty-frei-obentraut-back-5ghz.olsr	# 10.31.48.250
+10.31.48.252	mid1.humpty-frei-obentraut-back-5ghz.olsr	# 10.31.48.250 (mid #1)
+10.31.48.251	mid2.humpty-frei-obentraut-back-5ghz.olsr	# 10.31.48.250 (mid #2)
+10.31.109.79	buergerhaus-k12.olsr	# 10.31.109.79
+10.31.113.108	mid1.buergerhaus-k12.olsr	# 10.31.109.79 (mid #1)
+10.32.1.165	fffw-schloss.olsr	# 10.32.1.165
+10.36.197.172	mid1.fffw-schloss.olsr	# 10.32.1.165 (mid #1)
+10.31.40.201	oliver.olsr	# 10.31.40.201
+10.36.217.109	mid1.oliver.olsr	# 10.31.40.201 (mid #1)
+10.31.124.34	wilgu10-netbox.olsr	# 10.230.210.104
+10.36.190.183	wilgu10-east-nf-2ghz.olsr	# 10.230.210.104
+10.36.190.182	wilgu10-sama.olsr	# 10.230.210.104
+10.36.190.180	wilgu10-west-nf.olsr	# 10.230.210.104
+10.36.190.179	wilgu10-east-nf.olsr	# 10.230.210.104
+10.36.190.178	wilgu10-int.olsr	# 10.230.210.104
+10.230.210.104	wilgu10-core.olsr	# 10.230.210.104
+10.230.210.105	mid1.wilgu10-core.olsr	# 10.230.210.104 (mid #1)
+10.31.88.22	adlerkiez-mobil1.olsr	# 10.31.88.22
+10.31.79.64	e16-outdoor.olsr	# 10.31.79.64
+10.31.79.66	mid1.e16-outdoor.olsr	# 10.31.79.64 (mid #1)
+10.31.79.65	mid2.e16-outdoor.olsr	# 10.31.79.64 (mid #2)
+10.230.20.14	martin-luther-core.olsr	# 10.230.20.14
+10.230.20.41	mid1.martin-luther-core.olsr	# 10.230.20.14 (mid #1)
+10.230.20.37	mid2.martin-luther-core.olsr	# 10.230.20.14 (mid #2)
+10.230.20.33	mid3.martin-luther-core.olsr	# 10.230.20.14 (mid #3)
+10.31.108.220	soldinerfunk.olsr	# 10.31.108.220
+10.36.197.211	mid1.soldinerfunk.olsr	# 10.31.108.220 (mid #1)
+10.36.197.24	thw-obug.olsr	# 10.36.197.24
+10.230.18.186	chris-n2.olsr	# 10.230.18.186
+10.230.18.190	mid1.chris-n2.olsr	# 10.230.18.186 (mid #1)
+10.36.254.69	kosmos-wama-front-r.olsr	# 10.36.254.69
+10.36.254.70	mid1.kosmos-wama-front-r.olsr	# 10.36.254.69 (mid #1)
+10.31.34.184	L_n_H_Kitchen.olsr	# 10.31.34.184
+10.31.34.185	mid1.L_n_H_Kitchen.olsr	# 10.31.34.184 (mid #1)
+10.31.119.23	humpty-corona-falter-spalter.olsr	# 10.31.119.23
+10.31.119.25	mid1.humpty-corona-falter-spalter.olsr	# 10.31.119.23 (mid #1)
+10.31.119.24	mid2.humpty-corona-falter-spalter.olsr	# 10.31.119.23 (mid #2)
+10.30.96.4	fffw-00002.olsr	# 10.30.96.4
+10.36.197.129	mid1.fffw-00002.olsr	# 10.30.96.4 (mid #1)
+10.31.48.193	thw-freifunk-osfg.olsr	# 10.31.48.193
+10.36.197.104	mid1.thw-freifunk-osfg.olsr	# 10.31.48.193 (mid #1)
+10.230.226.212	scherer8-abb.olsr	# 10.230.226.212
+10.230.226.195	mid1.scherer8-abb.olsr	# 10.230.226.212 (mid #1)
+10.31.104.217	kls0e-24.olsr	# 10.31.104.217
+10.230.210.97	thf-torhaus.olsr	# 10.230.210.97
+10.31.87.122	k12-ff-3.olsr	# 10.31.87.122
+10.31.87.123	mid1.k12-ff-3.olsr	# 10.31.87.122 (mid #1)
+10.31.0.127	Tierpark_west.olsr	# 10.31.0.127
+10.230.111.81	mid1.Tierpark_west.olsr	# 10.31.0.127 (mid #1)
+10.31.32.11	tommyhausff1.olsr	# 10.31.32.11
+10.31.32.12	mid1.tommyhausff1.olsr	# 10.31.32.11 (mid #1)
+10.230.3.1	rhnk-core.olsr	# 10.230.3.1
+10.36.91.157	mid1.rhnk-core.olsr	# 10.230.3.1 (mid #1)
+10.230.3.58	mid2.rhnk-core.olsr	# 10.230.3.1 (mid #2)
+10.230.3.54	mid3.rhnk-core.olsr	# 10.230.3.1 (mid #3)
+10.230.3.50	mid4.rhnk-core.olsr	# 10.230.3.1 (mid #4)
+10.230.3.46	mid5.rhnk-core.olsr	# 10.230.3.1 (mid #5)
+10.230.3.42	mid6.rhnk-core.olsr	# 10.230.3.1 (mid #6)
+10.230.3.38	mid7.rhnk-core.olsr	# 10.230.3.1 (mid #7)
+10.230.3.34	mid8.rhnk-core.olsr	# 10.230.3.1 (mid #8)
+10.230.3.30	mid9.rhnk-core.olsr	# 10.230.3.1 (mid #9)
+10.230.3.26	mid10.rhnk-core.olsr	# 10.230.3.1 (mid #10)
+10.230.3.22	mid11.rhnk-core.olsr	# 10.230.3.1 (mid #11)
+10.230.3.18	mid12.rhnk-core.olsr	# 10.230.3.1 (mid #12)
+10.230.3.14	mid13.rhnk-core.olsr	# 10.230.3.1 (mid #13)
+10.230.3.10	mid14.rhnk-core.olsr	# 10.230.3.1 (mid #14)
+10.31.22.107	sange-w-2ghz.olsr	# 10.31.22.107
+10.31.29.129	fffw-eisenbahnstrasse.olsr	# 10.31.29.129
+10.36.197.100	mid1.fffw-eisenbahnstrasse.olsr	# 10.31.29.129 (mid #1)
+10.36.243.195	perleberger36-turm-2ghz-o.olsr	# 10.36.243.195
+10.36.243.226	mid1.perleberger36-turm-2ghz-o.olsr	# 10.36.243.195 (mid #1)
+10.36.197.204	thw-freifunk-opre.olsr	# 10.36.197.204
+10.36.197.60	kms269.olsr	# 10.36.197.60
+10.36.197.52	mid1.kms269.olsr	# 10.36.197.60 (mid #1)
+10.31.52.227	crust-as-fuck.olsr	# 10.31.52.227
+10.31.52.233	mid1.crust-as-fuck.olsr	# 10.31.52.227 (mid #1)
+10.230.38.209	scharni29-freifunk.olsr	# 10.230.38.209
+10.31.0.241	kls0e-vlux.olsr	# 10.31.0.241
+10.36.197.227	mid1.kls0e-vlux.olsr	# 10.31.0.241 (mid #1)
+10.36.73.193	kub.olsr	# 10.36.73.193
+10.31.54.231	kls0e-rivkah.olsr	# 10.31.54.231
+10.31.7.37	f2a-rooftop-nord-2ghz.olsr	# 10.31.7.37
+10.31.7.36	mid1.f2a-rooftop-nord-2ghz.olsr	# 10.31.7.37 (mid #1)
+10.31.40.233	himmelpfort_ff03_ykl1c.olsr	# 10.31.40.233
+10.36.197.73	mid1.himmelpfort_ff03_ykl1c.olsr	# 10.31.40.233 (mid #1)
+10.31.80.162	wassersport56.olsr	# 10.31.80.162
+10.36.204.5	Ahof-frieden01.olsr	# 10.36.204.5
+10.36.204.4	mid1.Ahof-frieden01.olsr	# 10.36.204.5 (mid #1)
+10.31.18.254	mueggel-5-2.olsr	# 10.31.18.254
+10.230.17.9	mid1.mueggel-5-2.olsr	# 10.31.18.254 (mid #1)
+10.230.147.157	mid2.mueggel-5-2.olsr	# 10.31.18.254 (mid #2)
+10.31.18.255	mid3.mueggel-5-2.olsr	# 10.31.18.254 (mid #3)
+10.31.74.213	kls0e-t4tch.olsr	# 10.31.74.213
+10.36.197.108	mid1.kls0e-t4tch.olsr	# 10.31.74.213 (mid #1)
+10.31.74.214	mid2.kls0e-t4tch.olsr	# 10.31.74.213 (mid #2)
+10.31.82.133	kls0e-ul210.olsr	# 10.31.82.133
+10.31.82.134	mid1.kls0e-ul210.olsr	# 10.31.82.133 (mid #1)
+10.31.83.120	magda-ap4.olsr	# 10.31.83.60
+10.31.83.119	magda-ap3.olsr	# 10.31.83.60
+10.31.83.118	magda-ap2.olsr	# 10.31.83.60
+10.31.83.117	magda-ap1.olsr	# 10.31.83.60
+10.31.83.116	magda-ost-5ghz.olsr	# 10.31.83.60
+10.31.83.115	magda-sama.olsr	# 10.31.83.60
+10.31.83.114	magda-switch.olsr	# 10.31.83.60
+10.31.83.60	magda-core.olsr	# 10.31.83.60
+10.31.83.61	mid1.magda-core.olsr	# 10.31.83.60 (mid #1)
+10.31.51.151	k12-ff-1.olsr	# 10.31.51.151
+10.31.51.152	mid1.k12-ff-1.olsr	# 10.31.51.151 (mid #1)
+10.230.226.216	scherer8-eg-s.olsr	# 10.230.226.216
+10.230.226.194	mid1.scherer8-eg-s.olsr	# 10.230.226.216 (mid #1)
+10.230.226.223	mid2.scherer8-eg-s.olsr	# 10.230.226.216 (mid #2)
+10.31.66.104	Ahoernchen.olsr	# 10.31.66.104
+10.36.197.237	mid1.Ahoernchen.olsr	# 10.31.66.104 (mid #1)
+10.31.48.1	am-dach-rt1.olsr	# 10.31.48.1
+10.36.197.147	mid1.am-dach-rt1.olsr	# 10.31.48.1 (mid #1)
+10.31.48.10	mid2.am-dach-rt1.olsr	# 10.31.48.1 (mid #2)
+10.31.48.6	mid3.am-dach-rt1.olsr	# 10.31.48.1 (mid #3)
+10.31.48.3	mid4.am-dach-rt1.olsr	# 10.31.48.1 (mid #4)
+10.31.126.15	rhxb-nw-ac.olsr	# 10.31.126.128
+10.31.126.14	rhxb-simeon.olsr	# 10.31.126.128
+10.31.126.13	rhxb-so-5ghz.olsr	# 10.31.126.128
+10.31.126.12	rhxb-sw-5ghz.olsr	# 10.31.126.128
+10.31.126.11	rhxb-nw-5ghz.olsr	# 10.31.126.128
+10.31.126.10	rhxb-no-5ghz.olsr	# 10.31.126.128
+10.31.126.9	rhxb-technikmuseum.olsr	# 10.31.126.128
+10.31.126.8	rhxb-rhnk.olsr	# 10.31.126.128
+10.31.126.7	rhxb-emmaus.olsr	# 10.31.126.128
+10.31.126.6	rhxb-manstein.olsr	# 10.31.126.128
+10.31.126.5	rhxb-flughafen.olsr	# 10.31.126.128
+10.31.126.4	rhxb-ipb.olsr	# 10.31.126.128
+10.31.126.3	rhxb-cloudkey.olsr	# 10.31.126.128
+10.31.126.2	rhxb-switch-roof.olsr	# 10.31.126.128
+10.31.126.128	rhxb-core.olsr	# 10.31.126.128
+10.31.126.139	mid1.rhxb-core.olsr	# 10.31.126.128 (mid #1)
+10.31.126.138	mid2.rhxb-core.olsr	# 10.31.126.128 (mid #2)
+10.31.126.137	mid3.rhxb-core.olsr	# 10.31.126.128 (mid #3)
+10.31.126.136	mid4.rhxb-core.olsr	# 10.31.126.128 (mid #4)
+10.31.126.135	mid5.rhxb-core.olsr	# 10.31.126.128 (mid #5)
+10.31.126.134	mid6.rhxb-core.olsr	# 10.31.126.128 (mid #6)
+10.31.126.133	mid7.rhxb-core.olsr	# 10.31.126.128 (mid #7)
+10.31.126.132	mid8.rhxb-core.olsr	# 10.31.126.128 (mid #8)
+10.31.126.131	mid9.rhxb-core.olsr	# 10.31.126.128 (mid #9)
+10.31.126.130	mid10.rhxb-core.olsr	# 10.31.126.128 (mid #10)
+10.31.126.129	mid11.rhxb-core.olsr	# 10.31.126.128 (mid #11)
+10.30.96.27	fffw-00016.olsr	# 10.30.96.27
+10.36.197.136	mid1.fffw-00016.olsr	# 10.30.96.27 (mid #1)
+10.30.96.28	mid2.fffw-00016.olsr	# 10.30.96.27 (mid #2)
+10.31.80.166	storkower139c.olsr	# 10.31.80.166
+10.31.39.113	perleberger59.olsr	# 10.31.39.113
+10.230.146.177	mid1.perleberger59.olsr	# 10.31.39.113 (mid #1)
+10.31.39.114	mid2.perleberger59.olsr	# 10.31.39.113 (mid #2)
+10.31.80.160	konrad-wolf46.olsr	# 10.31.80.160
+10.31.30.225	Fra29.olsr	# 10.31.30.225
+10.36.197.67	mid1.Fra29.olsr	# 10.31.30.225 (mid #1)
+10.35.255.170	cottbus-pipapo_halle_eingang.olsr	# 10.35.255.170
+10.36.197.214	Schulzendorf.olsr	# 10.36.197.214
+10.31.77.217	Lino5.olsr	# 10.31.77.217
+10.31.28.39	kls0e-1up.olsr	# 10.31.28.39
+10.31.28.56	mid1.kls0e-1up.olsr	# 10.31.28.39 (mid #1)
+10.36.137.1	cabuwazi-feld.olsr	# 10.36.137.1
+10.230.51.101	gitsch38.olsr	# 10.230.51.101
+10.31.12.43	mid1.gitsch38.olsr	# 10.230.51.101 (mid #1)
+10.31.0.92	liegewiese.olsr	# 10.31.0.92
+10.31.15.1	kls0e-grs.olsr	# 10.31.15.1
+10.31.85.54	k12-ff-4.olsr	# 10.31.85.54
+10.31.85.56	mid1.k12-ff-4.olsr	# 10.31.85.54 (mid #1)
+10.31.85.55	mid2.k12-ff-4.olsr	# 10.31.85.54 (mid #2)
+10.36.197.107	thw-olic.olsr	# 10.36.197.107
+10.36.197.99	mid1.thw-olic.olsr	# 10.36.197.107 (mid #1)
+10.36.152.99	bitcoin.olsr	# 10.31.34.213
+10.31.34.213	GenterStr69.olsr	# 10.31.34.213
+10.230.226.213	basta.olsr	# 10.230.226.213
+10.230.226.198	mid1.basta.olsr	# 10.230.226.213 (mid #1)
+10.230.226.197	mid2.basta.olsr	# 10.230.226.213 (mid #2)
+10.31.23.158	cryptocrypto.olsr	# 10.31.23.158
+10.36.197.171	mid1.cryptocrypto.olsr	# 10.31.23.158 (mid #1)
+10.31.23.159	mid2.cryptocrypto.olsr	# 10.31.23.158 (mid #2)
+10.31.28.58	kls0e-p59.olsr	# 10.31.28.58
+10.36.197.37	primavera-bbb-mgmt.olsr	# 10.36.197.37
+10.36.124.5	kranold18.olsr	# 10.36.124.5
+10.36.243.197	perleberger36-turm-2ghz-sw.olsr	# 10.36.243.197
+10.36.243.228	mid1.perleberger36-turm-2ghz-sw.olsr	# 10.36.243.197 (mid #1)
+10.31.15.184	Berlepsch50.olsr	# 10.31.15.184
+10.36.197.226	mid1.Berlepsch50.olsr	# 10.31.15.184 (mid #1)
+10.31.15.185	mid2.Berlepsch50.olsr	# 10.31.15.184 (mid #2)
+10.230.18.185	chris-core.olsr	# 10.230.18.185
+10.230.18.173	mid1.chris-core.olsr	# 10.230.18.185 (mid #1)
+10.230.18.181	mid2.chris-core.olsr	# 10.230.18.185 (mid #2)
+10.230.18.169	mid3.chris-core.olsr	# 10.230.18.185 (mid #3)
+10.230.18.165	mid4.chris-core.olsr	# 10.230.18.185 (mid #4)
+10.230.18.161	mid5.chris-core.olsr	# 10.230.18.185 (mid #5)
+10.230.18.177	mid6.chris-core.olsr	# 10.230.18.185 (mid #6)
+10.230.18.184	mid7.chris-core.olsr	# 10.230.18.185 (mid #7)
+10.31.37.211	Egelpfuhl-1.olsr	# 10.31.37.211
+10.36.197.78	mid1.Egelpfuhl-1.olsr	# 10.31.37.211 (mid #1)
+10.31.26.24	GSBS2.olsr	# 10.31.26.24
+10.31.26.26	mid1.GSBS2.olsr	# 10.31.26.24 (mid #1)
+10.31.38.211	schnackschnuck.olsr	# 10.31.38.211
+10.31.44.92	mid1.schnackschnuck.olsr	# 10.31.38.211 (mid #1)
+10.31.13.48	FrischAuf-Suedwest-2GHz.olsr	# 10.31.13.48
+10.31.13.49	mid1.FrischAuf-Suedwest-2GHz.olsr	# 10.31.13.48 (mid #1)
+10.31.96.111	hww20.olsr	# 10.31.96.111
+10.36.197.156	mid1.hww20.olsr	# 10.31.96.111 (mid #1)
+10.230.77.211	alfred-randt-w.olsr	# 10.230.77.211
+10.230.77.212	mid1.alfred-randt-w.olsr	# 10.230.77.211 (mid #1)
+10.31.52.61	kls0e-c0nny.olsr	# 10.31.52.61
+10.36.197.182	mid1.kls0e-c0nny.olsr	# 10.31.52.61 (mid #1)
+10.31.34.60	o69-n.olsr	# 10.31.34.60
+10.36.197.83	mid1.o69-n.olsr	# 10.31.34.60 (mid #1)
+10.31.108.109	DanneckerStr24.olsr	# 10.31.108.109
+10.36.197.85	mid1.DanneckerStr24.olsr	# 10.31.108.109 (mid #1)
+10.31.77.254	Verklaerung-core.olsr	# 10.31.77.254
+10.31.77.251	mid1.Verklaerung-core.olsr	# 10.31.77.254 (mid #1)
+10.31.77.250	mid2.Verklaerung-core.olsr	# 10.31.77.254 (mid #2)
+10.31.77.249	mid3.Verklaerung-core.olsr	# 10.31.77.254 (mid #3)
+10.31.77.248	mid4.Verklaerung-core.olsr	# 10.31.77.254 (mid #4)
+10.230.119.233	siegfried21-hermanstr.olsr	# 10.230.119.233
+10.36.154.33	Chor46.olsr	# 10.36.154.33
+10.36.154.36	mid1.Chor46.olsr	# 10.36.154.33 (mid #1)
+10.31.25.176	sange-core-1043.olsr	# 10.31.25.176
+10.31.18.103	buch8.olsr	# 10.31.18.103
+10.36.197.179	mid1.buch8.olsr	# 10.31.18.103 (mid #1)
+10.31.18.104	mid2.buch8.olsr	# 10.31.18.103 (mid #2)
+10.31.44.132	eichhorster22.olsr	# 10.31.44.132
+10.230.36.29	mid1.eichhorster22.olsr	# 10.31.44.132 (mid #1)
+10.230.34.53	mid2.eichhorster22.olsr	# 10.31.44.132 (mid #2)
+10.31.38.170	vonnegut.olsr	# 10.31.38.170
+10.31.38.171	mid1.vonnegut.olsr	# 10.31.38.170 (mid #1)
+10.31.104.209	mid2.vonnegut.olsr	# 10.31.38.170 (mid #2)
+10.36.243.161	perleberger36.olsr	# 10.36.243.161
+10.36.243.192	mid1.perleberger36.olsr	# 10.36.243.161 (mid #1)
+10.36.243.185	mid2.perleberger36.olsr	# 10.36.243.161 (mid #2)
+10.36.243.181	mid3.perleberger36.olsr	# 10.36.243.161 (mid #3)
+10.36.243.177	mid4.perleberger36.olsr	# 10.36.243.161 (mid #4)
+10.36.243.173	mid5.perleberger36.olsr	# 10.36.243.161 (mid #5)
+10.36.243.169	mid6.perleberger36.olsr	# 10.36.243.161 (mid #6)
+10.31.45.214	freifunk-bruesseler-10a.olsr	# 10.31.45.214
+10.31.28.151	sange-n-2ghz-cpe.olsr	# 10.31.28.151
+10.31.112.114	huette-ap1.olsr	# 10.31.114.0
+10.31.114.0	huette-core.olsr	# 10.31.114.0
+10.31.114.1	mid1.huette-core.olsr	# 10.31.114.0 (mid #1)
+10.31.43.224	kls0e-trg2.olsr	# 10.31.43.224
+10.31.43.225	mid1.kls0e-trg2.olsr	# 10.31.43.224 (mid #1)
+10.36.197.202	mid2.kls0e-trg2.olsr	# 10.31.43.224 (mid #2)
+10.31.8.147	huebi.olsr	# 10.31.8.147
+10.31.8.148	mid1.huebi.olsr	# 10.31.8.147 (mid #1)
+10.31.35.169	Lychener-Str-76-HH.olsr	# 10.31.35.169
+10.31.35.170	mid1.Lychener-Str-76-HH.olsr	# 10.31.35.169 (mid #1)
+10.31.98.239	rauchhaus-floor2north132.olsr	# 10.31.98.188
+10.31.98.238	rauchhaus-floor1south134.olsr	# 10.31.98.188
+10.31.98.237	rauchhaus-floor1north133.olsr	# 10.31.98.188
+10.31.98.236	rauchhaus-floor0south136.olsr	# 10.31.98.188
+10.31.98.235	rauchhaus-floor0north135.olsr	# 10.31.98.188
+10.31.98.234	rauchhaus-basement137.olsr	# 10.31.98.188
+10.31.98.226	rauchhaus-emma.olsr	# 10.31.98.188
+10.31.98.188	rauchhaus-core.olsr	# 10.31.98.188
+10.31.44.114	richardplatz8.olsr	# 10.31.44.114
+10.31.44.115	mid1.richardplatz8.olsr	# 10.31.44.114 (mid #1)
+10.230.33.246	mid2.richardplatz8.olsr	# 10.31.44.114 (mid #2)
+10.31.119.154	rigaer78-eap225.olsr	# 10.31.109.64
+10.31.119.155	rigaer78-west-2ghz.olsr	# 10.31.109.64
+10.31.119.156	rigaer78-west-5ghz.olsr	# 10.31.109.64
+10.31.119.157	rigaer78-east-2ghz.olsr	# 10.31.109.64
+10.31.119.158	rigaer78-east-5ghz.olsr	# 10.31.109.64
+10.31.119.132	rigaer78-zwingli.olsr	# 10.31.109.64
+10.31.119.131	rigaer78-sama.olsr	# 10.31.109.64
+10.31.119.130	rigaer78-poe.olsr	# 10.31.109.64
+10.31.109.64	rigaer78-core.olsr	# 10.31.109.64
+10.31.109.65	mid1.rigaer78-core.olsr	# 10.31.109.64 (mid #1)
+10.31.23.37	kls0e-darss-guests.olsr	# 10.31.23.37
+10.36.197.233	mid1.kls0e-darss-guests.olsr	# 10.31.23.37 (mid #1)
+10.31.23.38	mid2.kls0e-darss-guests.olsr	# 10.31.23.37 (mid #2)
+10.230.242.138	Ahof-frieden04.olsr	# 10.230.242.138
+10.230.226.215	scherer8-eg-nw.olsr	# 10.230.226.215
+10.230.226.193	mid1.scherer8-eg-nw.olsr	# 10.230.226.215 (mid #1)
+10.230.226.222	mid2.scherer8-eg-nw.olsr	# 10.230.226.215 (mid #2)
+10.31.13.14	JUP-omni.olsr	# 10.31.13.14
+10.31.13.9	mid1.JUP-omni.olsr	# 10.31.13.14 (mid #1)
+10.31.7.1	f2a-bbb-rt1.olsr	# 10.31.7.1
+10.31.7.181	mid1.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #1)
+10.31.7.177	mid2.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #2)
+10.31.7.133	mid3.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #3)
+10.31.7.173	mid4.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #4)
+10.31.7.137	mid5.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #5)
+10.31.7.149	mid6.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #6)
+10.31.7.161	mid7.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #7)
+10.31.7.153	mid8.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #8)
+10.31.7.157	mid9.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #9)
+10.31.7.129	mid10.f2a-bbb-rt1.olsr	# 10.31.7.1 (mid #10)
+10.31.96.101	Daoka.olsr	# 10.31.96.101
+10.31.14.148	skrik-ff.olsr	# 10.31.14.148
+10.36.197.250	mid1.skrik-ff.olsr	# 10.31.14.148 (mid #1)
+10.31.14.149	mid2.skrik-ff.olsr	# 10.31.14.148 (mid #2)
+10.31.24.187	armarian01.olsr	# 10.31.24.187
+10.36.197.149	mid1.armarian01.olsr	# 10.31.24.187 (mid #1)
+10.31.24.188	mid2.armarian01.olsr	# 10.31.24.187 (mid #2)
+10.31.30.120	hortulanus01.olsr	# 10.31.30.120
+10.31.48.217	Humpty-VH2.olsr	# 10.31.48.217
+10.31.48.218	mid1.Humpty-VH2.olsr	# 10.31.48.217 (mid #1)
+10.230.18.187	chris-o2.olsr	# 10.230.18.187
+10.230.18.191	mid1.chris-o2.olsr	# 10.230.18.187 (mid #1)
+10.31.107.12	Taubenschlag-Hof.olsr	# 10.31.107.12
+10.31.107.11	mid1.Taubenschlag-Hof.olsr	# 10.31.107.12 (mid #1)
+10.31.28.141	skrik-ff-nord.olsr	# 10.31.28.141
+10.31.8.22	ska95-schoolyard.olsr	# 10.31.8.22
+10.31.8.21	mid1.ska95-schoolyard.olsr	# 10.31.8.22 (mid #1)
+10.31.30.160	eylauerdachnet.olsr	# 10.31.30.160
+10.36.197.48	mid1.eylauerdachnet.olsr	# 10.31.30.160 (mid #1)
+10.31.30.161	mid2.eylauerdachnet.olsr	# 10.31.30.160 (mid #2)
+10.230.192.225	vaterhaus-core.olsr	# 10.230.192.225
+10.230.192.249	mid1.vaterhaus-core.olsr	# 10.230.192.225 (mid #1)
+10.230.192.245	mid2.vaterhaus-core.olsr	# 10.230.192.225 (mid #2)
+10.230.192.241	mid3.vaterhaus-core.olsr	# 10.230.192.225 (mid #3)
+10.230.192.237	mid4.vaterhaus-core.olsr	# 10.230.192.225 (mid #4)
+10.230.192.233	mid5.vaterhaus-core.olsr	# 10.230.192.225 (mid #5)
+10.230.192.229	mid6.vaterhaus-core.olsr	# 10.230.192.225 (mid #6)
+10.31.52.241	kls0e-ul510.olsr	# 10.31.52.241
+10.230.20.17	martin-luther-no.olsr	# 10.230.20.17
+10.230.20.1	mid1.martin-luther-no.olsr	# 10.230.20.17 (mid #1)
+10.31.43.200	fffw-gabba.olsr	# 10.31.43.200
+10.31.0.104	kls0e-kaidikhas.olsr	# 10.31.0.104
+10.36.197.192	mid1.kls0e-kaidikhas.olsr	# 10.31.0.104 (mid #1)
+10.31.0.171	mid2.kls0e-kaidikhas.olsr	# 10.31.0.104 (mid #2)
+10.36.197.177	schaal.olsr	# 10.36.197.177
+10.31.54.213	koepenickerlandstr280.olsr	# 10.31.54.213
+10.31.19.208	hajo.olsr	# 10.31.19.208
+10.36.197.106	thw-owbd.olsr	# 10.36.197.106
+10.31.48.184	thw-freifunk-ofdr.olsr	# 10.31.48.184
+10.36.197.234	mid1.thw-freifunk-ofdr.olsr	# 10.31.48.184 (mid #1)
+10.31.66.123	k12-e16.olsr	# 10.31.66.123
+10.31.66.124	mid1.k12-e16.olsr	# 10.31.66.123 (mid #1)
+10.230.226.214	scherer8-eg-o.olsr	# 10.230.226.214
+10.230.226.192	mid1.scherer8-eg-o.olsr	# 10.230.226.214 (mid #1)
+10.230.226.221	mid2.scherer8-eg-o.olsr	# 10.230.226.214 (mid #2)
+10.230.54.9	Ratibor4.olsr	# 10.230.54.9
+10.230.11.198	weidenbaum-r0.olsr	# 10.230.11.198
+10.230.11.206	mid1.weidenbaum-r0.olsr	# 10.230.11.198 (mid #1)
+10.230.11.199	mid2.weidenbaum-r0.olsr	# 10.230.11.198 (mid #2)
+10.31.48.247	fffw-gut-haus5.olsr	# 10.31.48.247
+10.31.20.194	kls0e-chef1.olsr	# 10.31.20.194
+10.31.20.195	mid1.kls0e-chef1.olsr	# 10.31.20.194 (mid #1)
+10.31.44.119	kls0e-born.olsr	# 10.31.44.119
+10.36.197.45	mid1.kls0e-born.olsr	# 10.31.44.119 (mid #1)
+10.36.243.196	perleberger36-turm-2ghz-so.olsr	# 10.36.243.196
+10.36.243.227	mid1.perleberger36-turm-2ghz-so.olsr	# 10.36.243.196 (mid #1)
+10.31.30.189	Steeger-Spot.olsr	# 10.31.30.189
+10.36.197.220	mid1.Steeger-Spot.olsr	# 10.31.30.189 (mid #1)
+10.31.96.221	mid2.Steeger-Spot.olsr	# 10.31.30.189 (mid #2)
+10.31.30.190	mid3.Steeger-Spot.olsr	# 10.31.30.189 (mid #3)
+10.230.226.246	scherer8-vlan206.olsr	# 10.230.226.225
+10.230.226.242	scherer8-segen.olsr	# 10.230.226.225
+10.230.226.238	scherer8-vlan204.olsr	# 10.230.226.225
+10.230.226.234	scherer8-strom.olsr	# 10.230.226.225
+10.230.226.230	scherer8-beuth.olsr	# 10.230.226.225
+10.230.226.226	scherer8-perleberger36.olsr	# 10.230.226.225
+10.230.229.24	scherer8-openwisp.olsr	# 10.230.226.225
+10.230.229.23	scherer8-capsman.olsr	# 10.230.226.225
+10.230.229.22	scherer8-unifi-controller.olsr	# 10.230.226.225
+10.230.229.13	hopglass-testenv.olsr	# 10.230.226.225
+10.230.229.13	autoupdater.olsr	# 10.230.226.225
+10.230.229.10	scherer8-wetter.olsr	# 10.230.226.225
+10.230.229.7	basta-router.olsr	# 10.230.226.225
+10.230.229.6	scherer8-buildbot.olsr	# 10.230.226.225
+10.230.229.5	scherer8-vmhost.olsr	# 10.230.226.225
+10.230.229.3	pserver.olsr	# 10.230.226.225
+10.230.226.225	scherer8.olsr	# 10.230.226.225
+10.230.226.211	mid1.scherer8.olsr	# 10.230.226.225 (mid #1)
+10.230.226.245	mid2.scherer8.olsr	# 10.230.226.225 (mid #2)
+10.230.226.241	mid3.scherer8.olsr	# 10.230.226.225 (mid #3)
+10.230.226.237	mid4.scherer8.olsr	# 10.230.226.225 (mid #4)
+10.230.226.233	mid5.scherer8.olsr	# 10.230.226.225 (mid #5)
+10.230.226.229	mid6.scherer8.olsr	# 10.230.226.225 (mid #6)
+10.31.23.18	Rudolf-Seiffert-25.olsr	# 10.31.23.18
+10.36.197.150	mid1.Rudolf-Seiffert-25.olsr	# 10.31.23.18 (mid #1)
+10.31.23.19	mid2.Rudolf-Seiffert-25.olsr	# 10.31.23.18 (mid #2)
+10.31.52.52	kls0e-p13.olsr	# 10.31.52.52
+10.31.39.45	elsa-braendstroem6-1.olsr	# 10.31.39.45
+10.36.197.61	mid1.elsa-braendstroem6-1.olsr	# 10.31.39.45 (mid #1)
+10.31.39.46	mid2.elsa-braendstroem6-1.olsr	# 10.31.39.45 (mid #2)
+10.31.28.149	sange-w-2ghz-cpe.olsr	# 10.31.28.149
+10.31.28.150	mid1.sange-w-2ghz-cpe.olsr	# 10.31.28.149 (mid #1)
+10.31.109.76	k12-buergerhaus.olsr	# 10.31.109.76
+10.31.109.77	mid1.k12-buergerhaus.olsr	# 10.31.109.76 (mid #1)
+10.31.80.167	seehausener.olsr	# 10.31.80.167
+10.36.254.80	kosmos-ortolf206-west.olsr	# 10.36.254.80
+10.230.51.110	mid1.kosmos-ortolf206-west.olsr	# 10.36.254.80 (mid #1)
+10.36.254.81	mid2.kosmos-ortolf206-west.olsr	# 10.36.254.80 (mid #2)
+10.31.15.203	Dragoner-Plangarage-AP.olsr	# 10.31.15.203
+10.230.33.241	mid1.Dragoner-Plangarage-AP.olsr	# 10.31.15.203 (mid #1)
+10.31.23.40	kls0e-darss-II.olsr	# 10.31.23.40
+10.31.38.65	mid1.kls0e-darss-II.olsr	# 10.31.23.40 (mid #1)
+10.36.197.161	FreiFolker.olsr	# 10.36.197.161
+10.36.197.160	mid1.FreiFolker.olsr	# 10.36.197.161 (mid #1)
+10.31.102.22	koepi-front.olsr	# 10.31.18.130
+10.31.102.21	koepi-trailer2.olsr	# 10.31.18.130
+10.31.102.20	koepi-trailer1.olsr	# 10.31.18.130
+10.31.102.13	koepi-ap4.olsr	# 10.31.18.130
+10.31.102.12	koepi-ap3.olsr	# 10.31.18.130
+10.31.102.11	koepi-ap2.olsr	# 10.31.18.130
+10.31.102.10	koepi-ap1.olsr	# 10.31.18.130
+10.31.102.5	koepi-simeon.olsr	# 10.31.18.130
+10.31.102.4	koepi-rhnk.olsr	# 10.31.18.130
+10.31.102.3	koepi-emma.olsr	# 10.31.18.130
+10.31.102.2	koepi-poe.olsr	# 10.31.18.130
+10.31.18.130	koepi-core.olsr	# 10.31.18.130
+10.31.38.204	mid1.koepi-core.olsr	# 10.31.18.130 (mid #1)
+10.31.19.8	mid2.koepi-core.olsr	# 10.31.18.130 (mid #2)
+10.230.8.35	Arcaden-Core.olsr	# 10.230.8.35
+10.230.8.62	mid1.Arcaden-Core.olsr	# 10.230.8.35 (mid #1)
+10.230.8.58	mid2.Arcaden-Core.olsr	# 10.230.8.35 (mid #2)
+10.230.8.50	mid3.Arcaden-Core.olsr	# 10.230.8.35 (mid #3)
+10.230.20.19	martin-luther-sw.olsr	# 10.230.20.19
+10.230.20.3	mid1.martin-luther-sw.olsr	# 10.230.20.19 (mid #1)
+10.31.48.214	thw-ocab.olsr	# 10.31.48.214
+10.36.197.212	mid1.thw-ocab.olsr	# 10.31.48.214 (mid #1)
+10.31.13.1	JUP-core.olsr	# 10.31.13.1
+10.31.13.21	mid1.JUP-core.olsr	# 10.31.13.1 (mid #1)
+10.31.77.200	huette15-core.olsr	# 10.31.77.200
+10.31.115.22	zwingli-sued-5ghz.olsr	# 10.31.115.32
+10.31.115.21	zwingli-nord-5ghz-alt.olsr	# 10.31.115.32
+10.31.115.20	zwingli-nord-5ghz.olsr	# 10.31.115.32
+10.31.115.5	zwingli-agym.olsr	# 10.31.115.32
+10.31.115.4	zwingli-rhnk.olsr	# 10.31.115.32
+10.31.115.3	zwingli-sama.olsr	# 10.31.115.32
+10.31.115.2	zwingli-switch.olsr	# 10.31.115.32
+10.31.115.32	zwingli-core.olsr	# 10.31.115.32
+10.31.115.38	mid1.zwingli-core.olsr	# 10.31.115.32 (mid #1)
+10.31.115.37	mid2.zwingli-core.olsr	# 10.31.115.32 (mid #2)
+10.31.115.36	mid3.zwingli-core.olsr	# 10.31.115.32 (mid #3)
+10.31.115.35	mid4.zwingli-core.olsr	# 10.31.115.32 (mid #4)
+10.31.115.34	mid5.zwingli-core.olsr	# 10.31.115.32 (mid #5)
+10.31.115.33	mid6.zwingli-core.olsr	# 10.31.115.32 (mid #6)
+10.31.14.154	Jackel_Kasper.olsr	# 10.31.14.154
+10.31.14.174	mid1.Jackel_Kasper.olsr	# 10.31.14.154 (mid #1)
+10.31.14.155	mid2.Jackel_Kasper.olsr	# 10.31.14.154 (mid #2)
+10.36.243.198	perleberger36-hof-2ghz-n.olsr	# 10.36.243.198
+10.36.243.229	mid1.perleberger36-hof-2ghz-n.olsr	# 10.36.243.198 (mid #1)
+10.230.87.49	kotti-core.olsr	# 10.230.87.49
+10.31.24.4	akiot-ffr01.olsr	# 10.31.24.4
+10.31.52.74	mid1.akiot-ffr01.olsr	# 10.31.24.4 (mid #1)
+10.31.6.62	segen-o5.olsr	# 10.31.6.17
+10.31.6.58	segen-n5.olsr	# 10.31.6.17
+10.31.6.54	segen-w5.olsr	# 10.31.6.17
+10.31.6.50	segen-s5.olsr	# 10.31.6.17
+10.31.6.46	segen-wsee.olsr	# 10.31.6.17
+10.31.6.42	segen-no.olsr	# 10.31.6.17
+10.31.6.38	segen-k12.olsr	# 10.31.6.17
+10.31.6.34	segen-beuth.olsr	# 10.31.6.17
+10.31.6.26	segen-mabb.olsr	# 10.31.6.17
+10.31.6.22	segen-f2a.olsr	# 10.31.6.17
+10.31.6.18	segen-saarbr.olsr	# 10.31.6.17
+10.31.66.14	segen-o2.olsr	# 10.31.6.17
+10.31.66.13	segen-n2.olsr	# 10.31.6.17
+10.31.66.12	segen-w2.olsr	# 10.31.6.17
+10.31.66.11	segen-s2.olsr	# 10.31.6.17
+10.31.66.2	segen-switch.olsr	# 10.31.6.17
+10.31.6.17	segen.olsr	# 10.31.6.17
+10.31.6.61	mid1.segen.olsr	# 10.31.6.17 (mid #1)
+10.31.6.57	mid2.segen.olsr	# 10.31.6.17 (mid #2)
+10.31.6.53	mid3.segen.olsr	# 10.31.6.17 (mid #3)
+10.31.6.49	mid4.segen.olsr	# 10.31.6.17 (mid #4)
+10.31.6.4	mid5.segen.olsr	# 10.31.6.17 (mid #5)
+10.31.6.3	mid6.segen.olsr	# 10.31.6.17 (mid #6)
+10.31.6.2	mid7.segen.olsr	# 10.31.6.17 (mid #7)
+10.31.6.1	mid8.segen.olsr	# 10.31.6.17 (mid #8)
+10.31.6.45	mid9.segen.olsr	# 10.31.6.17 (mid #9)
+10.31.6.41	mid10.segen.olsr	# 10.31.6.17 (mid #10)
+10.31.6.37	mid11.segen.olsr	# 10.31.6.17 (mid #11)
+10.31.6.33	mid12.segen.olsr	# 10.31.6.17 (mid #12)
+10.31.6.29	mid13.segen.olsr	# 10.31.6.17 (mid #13)
+10.31.6.25	mid14.segen.olsr	# 10.31.6.17 (mid #14)
+10.31.6.21	mid15.segen.olsr	# 10.31.6.17 (mid #15)
+
+### written by olsrd at Wed Dec 15 00:45:10 2021
