@@ -1,3 +1,10 @@
+/*  This software is licensed under the GPLv3 license. Please see the license
+ *  file in the root directory of this repository for more details.
+ *
+ *  Copyright (c) Martin Hübner, 2022
+ */
+
+
 use std::collections::BTreeMap;
 use std::process::Command;
 use std::net::IpAddr;
@@ -14,12 +21,6 @@ struct HNAjson {
     validityTime: u32,
 }
 
-impl fmt::Display for HNAjson {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{}/{}", self.destination, self.genmask)
-    }
-}
-
 #[allow(non_snake_case)]
 #[derive(Serialize, Deserialize)]
 struct OLSRjson {
@@ -30,7 +31,7 @@ struct OLSRjson {
     hna: Vec<HNAjson>,
 }
 
-#[derive(PartialEq, Eq, PartialOrd, Ord, Debug)]
+#[derive(PartialEq, Eq, PartialOrd, Ord)]
 struct CidrAddr {
     netaddr: IpAddr,
     netmask: u8,
@@ -42,7 +43,7 @@ impl fmt::Display for CidrAddr {
     }
 }
 
-#[derive(PartialEq, Eq, PartialOrd, Ord, Debug)]
+#[derive(PartialEq, Eq, PartialOrd, Ord)]
 struct HNAData {
     gateway: IpAddr,
     hna: CidrAddr,
