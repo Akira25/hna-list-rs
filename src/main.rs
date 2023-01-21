@@ -4,10 +4,9 @@
  *  Copyright (c) Martin Hübner, 2022
  */
 
-
 use std::collections::BTreeMap;
-use std::process::Command;
-use std::net::IpAddr;
+use std::io::{Read, Write};
+use std::net::{IpAddr, TcpStream};
 use std::{fmt, fs, str};
 
 use serde::{Deserialize, Serialize};
@@ -51,9 +50,9 @@ struct HNAData {
     host_name: String,
 }
 
-
 fn read_hna_to_tree(tree: &mut BTreeMap<IpAddr, HNAData>, raw_data: &str) {
-    let d: OLSRjson = serde_json::from_str(raw_data).unwrap();
+    let d: OLSRjson =
+        serde_json::from_str(raw_data).expect("Wasn't able to parse OLSR JSON-String correctly.");
 
     for obj in d.hna {
         tree.insert(
@@ -69,47 +68,43 @@ fn read_hna_to_tree(tree: &mut BTreeMap<IpAddr, HNAData>, raw_data: &str) {
             },
         );
     }
-
-    ()
 }
 
 fn read_hosts_to_tree(tree: &mut BTreeMap<IpAddr, String>, raw_data: String) {
-    let lines = raw_data.lines(); //.skip(2);
+    // split in lines, then filter empty lines and comments away,
+    // from the remaining lines, parse hostname and IPAddr
+    let lines = raw_data
+        .lines()
+        .filter(|i| !i.starts_with('#'))
+        .filter(|i| !i.is_empty())
+        .map(|x| {
+            let mut split = x.split_whitespace();
 
-    for line in lines {
-        let split: Vec<&str> = line.split_whitespace().collect();
+            let gw_ip: IpAddr = split.next().unwrap().parse().unwrap();
+            let hostname: String = split.next().unwrap().parse().unwrap();
 
-        // ignore empty lines
-        if split.len() < 2 {
-            continue;
-        }
+            return (gw_ip, hostname);
+        });
 
-        // ignore commenting lines (starting with '#')
-        if split[0].starts_with("#") {
-            continue;
-        }
-
-        let gw_ip: IpAddr = split[0].parse().unwrap();
-        let hostname: String = split[1].parse().unwrap();
-
-        tree.insert(gw_ip, hostname);
-    }
+    // set funnel on tree and let iterator-result run in...
+    tree.extend(lines);
 }
 
 fn main() {
+    let mut conn =
+        TcpStream::connect("127.0.0.1:9090").expect("Wasn't able to open Socket to OLSR-Daemon.");
+    conn.write("/hna".as_bytes())
+        .expect("Wasn't able to write to socket.");
 
-    let hna4_json_raw = Command::new("sh")
-        .arg("-c")
-        .arg("echo /hna | nc 127.0.0.1 9090")
-        .output()
-        .expect("failed to execute process");
-    let hna4_json = str::from_utf8(&hna4_json_raw.stdout).unwrap();
+    let mut hna4_json = "".to_string();
+    conn.read_to_string(&mut hna4_json)
+        .expect("reading from the socket failed.");
 
     // TODO: add IPv6-stuff
     // let hna6_raw = fs::read_to_string("raw/hna6_2006.txt").unwrap();
 
-    // let hostnames_raw = fs::read_to_string("raw/olsr.txt").unwrap();
-    let hostnames_raw = fs::read_to_string("/tmp/hosts/olsr").unwrap();
+    let hostnames_raw =
+        fs::read_to_string("/tmp/hosts/olsr").expect("Wasn't able to open '/tmp/hosts/olsr'.");
 
     let mut hna_tree = BTreeMap::new();
     let mut name_tree = BTreeMap::new();
