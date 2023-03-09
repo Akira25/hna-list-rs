@@ -6,8 +6,8 @@
 
 use std::collections::BTreeMap;
 use std::io::{Read, Write};
-use std::net::{IpAddr, TcpStream};
-use std::{fmt, fs, str};
+use std::net::{IpAddr, SocketAddr, TcpStream};
+use std::{env, fmt, fs, str, time::Duration};
 
 use serde::{Deserialize, Serialize};
 
@@ -91,10 +91,26 @@ fn read_hosts_to_tree(tree: &mut BTreeMap<IpAddr, String>, raw_data: String) {
 }
 
 fn main() {
-    let mut conn =
-        TcpStream::connect("127.0.0.1:9090").expect("Wasn't able to open Socket to OLSR-Daemon.");
+    let args: Vec<String> = env::args().collect();
+
+    let host_addr: IpAddr = if args.len() > 1 {
+        args[1]
+            .parse()
+            .expect("You didn't give a valid IP-Address. Please only give addresses.")
+    } else {
+        "127.0.0.1".parse().unwrap()
+    };
+
+    let err_msg = "Wasn't able to open a socket to the OLSR-Daemon at ".to_owned()
+        + &host_addr.to_string()
+        + ":9090.";
+
+    let sock_addr = SocketAddr::new(host_addr, 9090);
+    let mut conn = TcpStream::connect_timeout(&sock_addr, Duration::new(2, 0)).expect(&err_msg);
+    conn.set_read_timeout(Some(Duration::new(5, 0)))
+        .expect("Setting connection timeout failed!");
     conn.write("/hna".as_bytes())
-        .expect("Wasn't able to write to socket.");
+        .expect("Wasn't able to write to the socket.");
 
     let mut hna4_json = "".to_string();
     conn.read_to_string(&mut hna4_json)
