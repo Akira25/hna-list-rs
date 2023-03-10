@@ -4,6 +4,7 @@
  *  Copyright (c) Martin Hübner, 2022
  */
 
+use anyhow::{Context, Ok, Result};
 use std::collections::BTreeMap;
 use std::io::{Read, Write};
 use std::net::{IpAddr, SocketAddr, TcpStream};
@@ -90,13 +91,13 @@ fn read_hosts_to_tree(tree: &mut BTreeMap<IpAddr, String>, raw_data: String) {
     tree.extend(lines);
 }
 
-fn main() {
+fn main() -> Result<()> {
     let args: Vec<String> = env::args().collect();
 
     let host_addr: IpAddr = if args.len() > 1 {
         args[1]
             .parse()
-            .expect("You didn't give a valid IP-Address. Please only give addresses.")
+            .context("You didn't give a valid IP address. Please only give addresses, no hostnames.")?
     } else {
         "127.0.0.1".parse().unwrap()
     };
@@ -106,21 +107,21 @@ fn main() {
         + ":9090.";
 
     let sock_addr = SocketAddr::new(host_addr, 9090);
-    let mut conn = TcpStream::connect_timeout(&sock_addr, Duration::new(2, 0)).expect(&err_msg);
+    let mut conn = TcpStream::connect_timeout(&sock_addr, Duration::new(2, 0)).context(err_msg)?;
     conn.set_read_timeout(Some(Duration::new(5, 0)))
-        .expect("Setting connection timeout failed!");
+        .context("Setting connection timeout failed!")?;
     conn.write("/hna".as_bytes())
-        .expect("Wasn't able to write to the socket.");
+        .context("Wasn't able to write to the socket.")?;
 
     let mut hna4_json = "".to_string();
     conn.read_to_string(&mut hna4_json)
-        .expect("reading from the socket failed.");
+        .context("reading from the socket failed.")?;
 
     // TODO: add IPv6-stuff
     // let hna6_raw = fs::read_to_string("raw/hna6_2006.txt").unwrap();
 
     let hostnames_raw =
-        fs::read_to_string("/tmp/hosts/olsr").expect("Wasn't able to open '/tmp/hosts/olsr'.");
+        fs::read_to_string("/tmp/hosts/olsr").context("Wasn't able to open '/tmp/hosts/olsr'.")?;
 
     let mut hna_tree = BTreeMap::new();
     let mut name_tree = BTreeMap::new();
@@ -152,4 +153,6 @@ fn main() {
             val.host_name
         );
     }
+
+    Ok(())
 }
